@@ -1,6 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
+import mdTree2Series from "../utils/mdTree2Serires";
+console.log(mdTree2Series());
 
 export default defineUserConfig({
   title: "Refinec's Blog",
