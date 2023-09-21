@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import mdTree2Series from "../utils/mdTree2Serires";
-console.log(mdTree2Series());
+const seriesArr = mdTree2Series();
 
 export default defineUserConfig({
   title: "Refinec's Blog",
@@ -16,36 +16,12 @@ export default defineUserConfig({
     docsBranch: "main",
     docsDir: "example",
     lastUpdatedText: "",
+    assetsInclude: "**/*.awebp",
+    // 自动设置分类
     // autoSetSeries: true,
     // series 为原 sidebar
     series: {
-      "/docs/": [
-        {
-          text: "工作集",
-          children: [
-            {
-              text: "工具集",
-              link: "/docs/工作集/工具集.html"
-            },
-            {
-              text: "所有",
-              link: "/docs/工作集/所有.html"
-            },
-            {
-              text: "css常用样式集",
-              link: "/docs/工作集/css常用样式集.html"
-            },
-            {
-              text: "CSS问题集",
-              link: "/docs/工作集/CSS问题集.html"
-            }
-          ],
-        },
-        // {
-        //   text: "module two",
-        //   children: ["api", "plugin"],
-        // },
-      ],
+      "/docs/": seriesArr,
     },
     navbar: [
       { text: "首页", link: "/" },
