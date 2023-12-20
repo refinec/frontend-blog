@@ -2,7 +2,9 @@ import { defineUserConfig } from "vuepress";
 import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import mdTree2Series from "../utils/mdTree2Serires";
+import cpDocs2Blogs from "../utils/cpDocs2Blogs";
 const seriesArr = mdTree2Series();
+cpDocs2Blogs()
 
 export default defineUserConfig({
   title: "Refinec's Blog",
@@ -25,8 +27,8 @@ export default defineUserConfig({
     },
     navbar: [
       { text: "首页", link: "/" },
-      // { text: "分类", link: "/categories/reco/1/" },
-      // { text: "标签", link: "/tags/tag1/1/" },
+      { text: "分类", link: "/categories/reco/1/" },
+      { text: "标签", link: "/tags/tag1/1/" },
       {
         text: "文档", link: "/docs/"
         // children: [
