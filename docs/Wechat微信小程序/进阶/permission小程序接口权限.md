@@ -1,1 +1,0 @@
-https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html
