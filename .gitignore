@@ -1,4 +1,10 @@
 .vuepress/.cache
 .vuepress/.temp
+.vuepress/dist
 node_modules
 .idea
+
+docs/**/*
+blogs/**/*
+
+package-lock.json
