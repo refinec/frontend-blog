@@ -7,7 +7,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev .",
-    "start": "vuepress dev .",
     "build": "vuepress build ."
   },
   "dependencies": {
@@ -18,5 +17,6 @@
   },
   "engines": {},
   "devDependencies": {
+    "pinyin-pro": "^3.19.6"
   }
 }

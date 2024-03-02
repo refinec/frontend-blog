@@ -1,0 +1,13 @@
+.series-container .series-group h5.series-heading+ul {
+    padding-top: 0.6em !important;
+    padding-left: 1em !important;
+}
+.series-container .series-group h5.series-heading {
+    margin-top: 0.6em !important;
+}
+.series-container .series-group {
+    padding-bottom: 0.6em !important
+}
+.series-container .series-group:not(:first-of-type) {
+    border-bottom: none !important;
+}

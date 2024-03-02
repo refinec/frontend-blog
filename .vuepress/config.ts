@@ -9,10 +9,10 @@ export default defineUserConfig({
   description: "前端笔记",
   theme: recoTheme({
     // algolia: {
-    //   appId: 'ESMZF9SCNS',
-    //   apiKey: '96c83f0b52221acd85d8662a4d152e0a',
-    //   indexName: 'docs',
-    //   inputSelector: '### REPLACE ME ####',
+    //   appId: 'DYXP6WPXJL',
+    //   apiKey: '2cdddec5f0a3f1189c2309af0c837bb6',
+    //   indexName: 'hallelujah',
+    //   inputSelector: '搜索',
     //   algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
     //   debug: false // Set debug to true if you want to inspect the dropdown
     // },
@@ -21,9 +21,11 @@ export default defineUserConfig({
     logo: "https://avatars.githubusercontent.com/refinec",
     author: "refinec",
     authorAvatar: "https://avatars.githubusercontent.com/refinec",
-    docsRepo: "https://github.com/refinec",
-    docsBranch: "main",
-    docsDir: "docs",
+    // repo: "https://github.com/refinec/FrontEndNotes",
+    // docsRepo: "https://github.com/refinec/FrontEndNotes",
+    // docsBranch: "master",
+    docsDir: "/docs",
+    sourceDir: '/docs',
     lastUpdatedText: "",
     assetsInclude: "**/*.awebp",
 
@@ -44,16 +46,16 @@ export default defineUserConfig({
     // series 为原 sidebar
     series: {
       "/docs/": seriesArr,
-      // "/docs/theme-reco/": [
-      //   {
-      //     text: "module one",
-      //     children: ["home", "theme"],
-      //   },
-      //   {
-      //     text: "module two",
-      //     children: ["api", "plugin"],
-      //   },
-      // ],
+    //   // "/docs/theme-reco/": [
+    //   //   {
+    //   //     text: "module one",
+    //   //     children: ["home", "theme"],
+    //   //   },
+    //   //   {
+    //   //     text: "module two",
+    //   //     children: ["api", "plugin"],
+    //   //   },
+    //   // ],
     },
     navbar: [
       { icon: 'Home', text: "首页", link: "/" },
@@ -61,8 +63,8 @@ export default defineUserConfig({
       { icon: 'Tag', text: "标签", link: "/tags/docs/1/" },
       {
         icon: 'Document',
-        text: "文档",
-        link: "/docs/",
+        text: "笔记",
+        link: "/docs/docs/",
         // children: [
           // { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
           // { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
