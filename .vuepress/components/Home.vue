@@ -444,7 +444,7 @@
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap"); */
 
 body {
     background-color: #1a3142;
